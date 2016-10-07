@@ -134,7 +134,35 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 		  controller: "emailCtrl"
         }
       }
+    })
+    
+    .state('app.learning_center', {
+      url: "/learning_center",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/learning_center.html"
+        }
+      }
+    })
+    
+    .state('app.packaging_steel_conversion_chart', {
+      url: "/learning/packaging_steel_conversion_chart",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/learning/packaging_steel_conversion_chart.html"
+        }
+      }
+    })
+    
+    .state('app.thickness_conversion_chart', {
+      url: "/learning/thickness_conversion_chart",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/learning/thickness_conversion_chart.html"
+        }
+      }
     });
+    
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/dashboard');
 })
