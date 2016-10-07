@@ -161,6 +161,51 @@ angular.module('starter', ['ionic', 'starter.controllers'])
           templateUrl: "templates/learning/thickness_conversion_chart.html"
         }
       }
+    })
+    
+    .state('app.raw_materials_grades', {
+      url: "/learning/raw_materials_grades",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/learning/raw_materials_grades.html"
+        }
+      }
+    })
+    
+    .state('app.bars_shapes_and_steel_plates_grades', {
+      url: "/learning/bars_shapes_and_steel_plates_grades",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/learning/bars_shapes_and_steel_plates_grades.html"
+        }
+      }
+    })
+    
+    .state('app.steel_plates_and_sheets_grades', {
+      url: "/learning/steel_plates_and_sheets_grades",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/learning/steel_plates_and_sheets_grades.html"
+        }
+      }
+    })
+    
+    .state('app.steel_pipes_grades', {
+      url: "/learning/steel_pipes_grades",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/learning/steel_pipes_grades.html"
+        }
+      }
+    })
+    
+    .state('app.wire_and_wire_product_grades', {
+      url: "/learning/wire_and_wire_product_grades",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/learning/wire_and_wire_product_grades.html"
+        }
+      }
     });
     
   // if none of the above states are matched, use this as the fallback
